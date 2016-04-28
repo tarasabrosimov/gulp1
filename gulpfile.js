@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var contactCss = require('gulp-concat-css');
+var concatCss = require('gulp-concat-css');
 var connect = require('gulp-connect');
 var replace = require('gulp-html-replace');
 var includer = require('gulp-htmlincluder');
@@ -36,7 +36,7 @@ gulp.task('html', function(){
 			css: 'css/style.css'
 		}))
 		.pipe(gulp.dest('build/'))
-		.pipe(connect.reload());;
+		.pipe(connect.reload());
 });
 
 gulp.task('default', function(){
